@@ -1,0 +1,207 @@
+/*********************
+  IMPORT
+**********************/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+/*********************
+  GENERAL
+**********************/
+html,
+body {
+    height: 100%;
+}
+
+/*Logo*/
+#name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 4em;
+    color: rgb(227, 227, 227);
+}
+
+.btnEnviar {
+    border: none;
+
+}
+
+/*********************
+  TABLE
+**********************/
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: #269abc;
+    cursor: auto;
+    box-shadow: #23527c;
+    padding: 0;
+    height: auto;
+}
+
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+
+/*********************
+  LOGIN
+**********************/
+
+.form-signin {
+    max-width: 200px;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.btn-block {
+    display: block;
+    width: 90%;
+}
+
+#icon {
+    text-shadow: none;
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+    height: 93px;
+    width: 93px;
+    line-height: 93px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(68, 167, 235);
+    margin: 10px;
+}
+
+#contact {
+    max-width: 650px;
+}
+
+/*********************
+  NAVEGACION
+**********************/
+.navbar {
+    background-color: transparent !important;
+}
+
+nav .navbar-brand {
+    background: url(../img/logoEscudo2.png);
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    height: auto;
+}
+
+nav .navbar-brand #textLogo {
+    color: aliceblue;
+ /*   color:   saddlebrown; */
+    font-size: 1.3em;
+    padding-left: 60px;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331 !important;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331 !important;
+    }
+}
+
+/*********************
+  MAIN IMAGE
+**********************/
+.full-bg-img {
+    background: url(../img/webPortal3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer.page-footer {
+    margin-top: -20px;
+}
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+.pt-color {
+    background-color: #1C2331 !important;
+}
+
+.st-color {
+    background-color: #4D5668 !important;
+}
+
+.et-color {
+    background-color: #3F729B !important;
+}
+
+.btn-ptc {
+    background-color: #1C2331 !important;
+}
+
+.btn-ptc:hover {
+    background-color: #2f3a51 !important;
+}
+
+.btn-ptc:focus {
+    background-color: #2f3a51 !important;
+}
+
+.btn-stc {
+    background-color: #4D5668 !important;
+}
+
+.btn-stc:hover {
+    background-color: #636e85 !important;
+}
+
+.btn-stc:focus {
+    background-color: #636e85 !important;
+}
+
+.btn-etc {
+    background-color: #3F729B !important;
+}
+
+.btn-etc:hover {
+    background-color: #548cb9 !important;
+}
+
+.btn-etc:focus {
+    background-color: #548cb9 !important;
+}
+
+.fb-bg {
+    background-color: #3B5998;
+}
+
+.tw-bg {
+    background-color: #55ACEE;
+}
+
+.gplus-bg {
+    background-color: #DD4B39;
+}
+
+/*********************
+  FOOTER
+**********************/
+footer.page-footer {
+    margin-top: 0;
+    background-color: #1C2331;
+}
+
+.info-sila {
+    background-color: rgb(74, 189, 232) !important;
+    color: white;
+}

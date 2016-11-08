@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proclass</title>
+	<!-- Material Design Icons     -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+    <link href="../../css/style.css" rel="stylesheet">
+	<!--requireJs-->
+	<!--<script src="../../js/libs/require/require.js" data-main="../../"></script>-->
+	<!--<script src="../../js/modules"></script>-->
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar blue navbar-fixed-top z-depth-1" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-light" href="index.html"><span id="textLogo">Institución Universitaria Politécnico GranColombiano</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group waves-effect waves-light">
+                                <input type="text" class="form-control" placeholder="Asignatura">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navigation-->
+    <!-- Intro image -->
+    <section class="full-bg-img">
+        <div class="container">
+            <div class="space-30"></div>
+            <div class="space-30"></div>
+            <div class="vertical center text-center">
+                <div id="user-list" class="row">
+                    <!--aca meto el codigo nuevo -->
+                    <br>
+                    <br>
+                    <label class="active"><font size="5" color="white">Detalle del sílabo - Consulta Preliminar</font></label>
+                    <br>
+
+                    <!--Jumbotron-->
+                    <div class="jumbotron">
+                        <h5 class="h1-responsive">Secciones del Sílabo</h5>
+
+                        <ul class="nav nav-tabs tabs-8" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Sección 1</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Sección 2</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Sección 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Sección 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel5" role="tab">Sección 5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel6" role="tab">Sección 6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">Sección 7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">Sección 8</a>
+                            </li>
+                        </ul>
+	                    <!-- Tab panels -->
+                        <div class="tab-content">
+
+                            <!--Panel 1-->
+                            <div class="tab-pane active" id="panel1" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>I. IDENTIFICACIÓN DE LA ASIGNATURA</h5></div>
+                                    <div class="card-block">
+                                        <form class="form-horizontal">
+
+                                          <div class="form-group-lg">
+                                            <label for="input1" class="col-sm-2 control-label">Nombre de la Asigntura</label>
+                                            <div class="col-sm-9">
+                                              <input type="email" class="form-control" id="input1" placeholder="Nombre de la Asigntura">
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group-lg">
+                                            <label for="input2" class="col-sm-2 control-label">Código</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="input2" placeholder="Código">
+                                            </div>
+                                          </div>
+
+                                            <div class="form-group-lg">
+                                                <label for="input3" class="col-sm-2 control-label">No.de Créditos</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="input3" placeholder="No.de Créditos">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group-lg">
+                                                <label for="input4" class="col-sm-2 control-label">Tipo de Asignatura</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="input4" placeholder="Tipo de Asignatura">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group-lg">
+                                                <label for="input5" class="col-sm-2 control-label">Duración (Semanas)</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="input5" placeholder="Duración (Semanas)">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group-lg">
+                                                <label for="input6" class="col-sm-2 control-label">Condiciones de Inscripión</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="input6" placeholder="Condiciones de Inscripión">
+                                                </div>
+                                            </div>
+
+                                          <div class="form-group-lg">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-9">
+                                              <select class="form-control input-lg" id="inputPassword3">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                            </div>
+                                          </div>
+
+                                            <div class="form-group">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 1-->
+
+                            <!--Panel 2-->
+                            <div class="tab-pane" id="panel2" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>II. DESCRIPCIÓN DE LA ASIGNATURA</h5></div>
+                                    <div class="card-block row">
+                                        <div class="col-sm-1"></div>
+	                                    <!--Textarea with icon prefix-->
+                                        <div class="col-sm-10 md-form">
+                                            <i class="fa fa-pencil prefix"></i>
+                                            <textarea type="text" id="form8" class="md-textarea"></textarea>
+                                            <label for="form8">Descripción de la Materia</label>
+                                        </div>
+                                        <div class="col-sm-3"></div>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 2-->
+
+                            <!--Panel 3-->
+                            <div class="tab-pane" id="panel3" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>III. LOGRO BÁSICO DE LA ASGINATURA</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 3-->
+
+                            <!--Panel 4-->
+                            <div class="tab-pane" id="panel4" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>IV. COMPETENCIAS RELACIONADAS CON LA ASIGNATURA</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 4-->
+
+                            <!--Panel 5-->
+                            <div class="tab-pane" id="panel5" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>V. NÚCLEOS TEMÁTICOS</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 5-->
+
+                            <!--Panel 6-->
+                            <div class="tab-pane" id="panel6" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>VI. DESARROLLO DIDÁCTICO DE LA ASIGNATURA</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 6-->
+
+                            <!--Panel 7-->
+                            <div class="tab-pane" id="panel7" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>VII. EVALUACIÓN</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 7-->
+
+                            <!--Panel 8-->
+                            <div class="tab-pane" id="panel8" role="tabpanel">
+                                <br>
+	                            <!--Panel-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading info-sila" style="color: white"><h5>VIII. APOYOS REFERENCIALES</h5></div>
+                                    <div class="card-block">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+	                            <!--/.Panel-->
+                            </div>
+                            <!--/.Panel 8-->
+
+                        </div>
+                        <hr class="m-y-2">
+                        <nav>
+                            <ul class="pager">
+                                <li class="pager-prev btn-large"><a href="#">Regresar</a></li>
+                                <li class="pager-next btn-large"><a href="#">Guardar</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--/.Jumbotron-->
+
+
+
+                    <div class="panel panel-default blue-grey">
+                        <!-- INICIO DEL PANEL CONTENEDOR-->
+                        <div class="panel-body black-text">
+                            <!-- INICIO DEL PANEL CONTENEDOR-->
+
+                            <h5><font size="5">Secciones del Sílabo</font></h5>
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700 ">
+                               <a data-toggle="collapse" href="#collapse1">I. IDENTIFICACIÓN DE LA ASIGNATURA</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse left">
+                                        <div class="panel-body left text-left ">
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Nombre de la Asigntura</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Código</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Nro.de Créditos</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Tipo de Asigntura</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Duración (semanas)</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 list-group-item">Condiciones de inscripión</div>
+                                                <div class="col-md-9 list-group-item">-</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                              <a data-toggle="collapse" href="#collapse3">II. DESCRIPCIÓN DE LA ASIGNATURA</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION II DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700 ">
+                                <a data-toggle="collapse" href="#collapse4">III. LOGRO BÁSICO DE LA ASGINATURA</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION III DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                                <a data-toggle="collapse" href="#collapse5">IV. COMPETENCIAS RELACIONADAS CON LA ASIGNATURA</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION IV DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                                <a data-toggle="collapse" href="#collapse6">V. NÚCLEOS TEMÁTICOS</a>
+                            </h4>
+                                    </div>
+
+
+                                    <div id="collapse6" class="panel-collapse collapse">
+
+                                        <div class="panel-body left text-left ">
+                                            <div class="row">
+                                                <div class="col-md-12 list-group-item blue-grey white-text">Núcleo Temático:
+                                                    <div class="row">
+                                                        <div class="row">
+                                                            <div class="col-md-1"></div>
+                                                            <div class="col-md-10 list-group-item blue-text">Objetivos
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text ">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-1"></div>
+                                                            <div class="col-md-10 list-group-item blue-text">Ejes Temáticos
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 list-group-item blue-grey white-text">Núcleo Temático:
+                                                    <div class="row">
+                                                        <div class="row">
+                                                            <div class="col-md-1"></div>
+                                                            <div class="col-md-10 list-group-item blue-text">Objetivos
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text ">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-1"></div>
+                                                            <div class="col-md-10 list-group-item blue-text">Ejes Temáticos
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-1"></div>
+                                                                    <div class="col-md-10 list-group-item blue white-text">---</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                                <a data-toggle="collapse" href="#collapse7">VI. DESARROLLO DIDÁCTICO DE LA ASIGNATURA</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION V DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                                <a data-toggle="collapse" href="#collapse8">VII. EVALUACIÓN</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION VII DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading blue">
+                                        <h4 class="panel-title white-text bold-700">
+                                <a data-toggle="collapse" href="#collapse9">VIII. APOYOS REFERENCIALES</a>
+                            </h4>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <textarea placeholder="...(CARGAR SECCION VIII DEL SILABO)..." autofocus required class="form-control" rows="10" id="challenge"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--FIN PANEL-->
+                    </div>
+                    <!--FIN PANEL-->
+
+                    <DIV ALIGN=left>
+                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/listaItemSilaboNuevo2.html">Regresar</a>
+                        <a class="btn btn-primary waves-effect waves-light">Exportar a PDF</a>
+                    </DIV>
+
+
+                    <!-- FIN BLOQUE CODIGO NUEVO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/. Intro image -->
+    <!-- Footer -->
+    <footer class="page-footer" id="footer">
+        <!--Footer Content-->
+        <div class="container">
+            <div class="row center-on-small-only">
+                <!--Fifth column-->
+                <div class="col-md-2 text-center">
+                    <a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg">Vive el Poli</a>
+                </div>
+                <!--/.Fifth column-->
+            </div>
+        </div>
+        <!--/.Footer Content-->
+        <!--Coprytights-->
+        <div class="footer-copyright text-center rgba-black-light">
+            <div class="container-fluid">
+                © 2016 Copyright: <a href="http://www.MDBootstrap.com"> PoliTécnico GranColombiano </a><a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg"><i
+				            class="fa fa-facebook"> </i></a>
+                <a target="_blank" href="https://twitter.com/poligran" class="btn-sm tw-bg"><i class="fa fa-twitter"> </i></a>
+                <a target="_blank" href="https://plus.google.com/+poligran/posts" class="btn-sm gplus-bg"><i class="fa fa-google-plus"> </i></a>
+            </div>
+        </div>
+        <!--/.Coprytights-->
+    </footer>
+    <!-- Footer -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/libs/jquery/jquery-2.1.3.min.js"></script>
+    <!--Underscore-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js" type="text/javascript"></script>
+    <script src="../../js/libs/underscore/underscore-min.js"></script>
+    <!--Backbone-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+    <script src="../../js/libs/backbone/backbone-min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- Material Design Bootstrap -->
+    <script src="../../js/models/MateriaModel.js"></script>
+    <script src="../../js/collections/MateriaCollection.js"></script>
+    <script src="../../js/views/MateriaListView.js"></script>
+
+    <script type="text/javascript">
+        function htmlEncode(value) {
+	        return $('<div/>').text(value).html();
+        }
+    </script>
+    <script type="text/javascript">
+        /*
+         Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
+         */
+
+        $(document).ready(function () {
+	        $('.filterable .btn-filter').click(function () {
+		        var $panel = $(this).parents('.filterable'),
+						        $filters = $panel.find('.filters input'),
+						        $tbody = $panel.find('.table tbody');
+		        if ($filters.prop('disabled') == true) {
+			        $filters.prop('disabled', false);
+			        $filters.first().focus();
+		        } else {
+			        $filters.val('').prop('disabled', true);
+			        $tbody.find('.no-result').remove();
+			        $tbody.find('tr').show();
+		        }
+	        });
+
+	        $('.filterable .filters input').keyup(function (e) {
+		        /* Ignore tab key */
+		        var code = e.keyCode || e.which;
+		        if (code == '9') return;
+		        /* Useful DOM data and selectors */
+		        var $input = $(this),
+						        inputContent = $input.val().toLowerCase(),
+						        $panel = $input.parents('.filterable'),
+						        column = $panel.find('.filters th').index($input.parents('th')),
+						        $table = $panel.find('.table'),
+						        $rows = $table.find('tbody tr');
+		        /* Dirtiest filter function ever ;) */
+		        var $filteredRows = $rows.filter(function () {
+			        var value = $(this).find('td').eq(column).text().toLowerCase();
+			        return value.indexOf(inputContent) === -1;
+		        });
+		        /* Clean previous no-result if exist */
+		        $table.find('tbody .no-result').remove();
+		        /* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
+		        $rows.show();
+		        $filteredRows.hide();
+		        /* Prepend no-result row if all rows are filtered */
+		        if ($filteredRows.length === $rows.length) {
+			        $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="' + $table.find('.filters th').length + '">No result found</td></tr>'));
+		        }
+	        });
+        });
+    </script>
+    <script type="text/template" id="user-list-template">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <div class="pull-left">
+                    <a href="#/new" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <h5>Lista de Departamentos</h5>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter">Filtar <span class="glyphicon glyphicon-filter"></span></button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th>
+                            <input type="text" class="form-control text-center" placeholder="#" disabled>
+                        </th>
+                        <th>
+                            <input type="text" class="form-control text-center" placeholder="Nombre" disabled>
+                        </th>
+                        <th>
+                            <input type="text" class="form-control text-center" placeholder="Apellido" disabled>
+                        </th>
+                        <th>
+                            <input type="text" class="form-control text-center" placeholder="Correo" disabled>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <% _.each(departamentos, function(depto, i) { %>
+                        <tr class="text-center">
+                            <td>
+                                <%= i+1%>
+                            </td>
+                            <td>
+                                <%= htmlEncode(depto.get('nombreDpto')) %>
+                            </td>
+                            <td>
+                                <%= htmlEncode(depto.get('nombreFacultad')) %>
+                            </td>
+                            <td>
+                                <%= htmlEncode(depto.get('sedeFacultad')) %>
+                            </td>
+                            <td><a class="btn btn-default btn-xs" href="#/edit/<%= depto.id %>">Editar <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </script>
+    <script type="text/template" id="edit-user-template">
+
+        <button type="submit" class="btn">
+            <%= user ? 'Update' : 'Create' %>
+        </button>
+        <% if(user) { %>
+            <input type="hidden" name="id" value="<%= user.id %>"/>
+            <button data-user-id="<%= user.id %>" class="btn btn-danger delete">Delete</button>
+        <% }; %>
+        </form>
+                <form class="edit-user-form col-md-12">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="input-field col-md-8">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" value="<%= user ? user.get('nombre') : '' %>">
+                            <label for="icon_prefix">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="input-field col-md-8">
+                            <i class="material-icons prefix">assignment_ind</i>
+                            <input id="icon_prefix" type="text" class="validate" value="<%= user ? user.get('cedula') : '' %>">
+                            <label for="icon_prefix">Cedula</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="input-field col-md-8">
+                            <i class="material-icons prefix">description</i>
+                            <input id="icon_prefix" type="text" class="validate" value="<%= user ? user.get('categoria') : '' %>">
+                            <label for="icon_prefix">Categoria</label>
+                        </div>
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="row panel-footer ">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary">
+                                <%= user ? 'Update' : 'Create' %>
+                            </button>
+                        </div>
+                        <% if(user) { %>
+                            <div class="col-md-3">
+                                <button class="btn btn-warning inactivar">Inactivar</button>
+                            </div>
+                            <div class="col-md-2"></div>
+                    </div>
+                </form>
+    </script>
+</body>
+
+</html>
