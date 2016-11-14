@@ -45,18 +45,18 @@
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group waves-effect waves-light">
                       <!--input type="text" class="form-control" placeholder="Buscar"--> 
-                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/principal.html">Regresar</a>    
+                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/principal_Asesor.html">Regresar</a>    
                     </div>
                 </form>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" >Opciones <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="../../modules/admin/modelo0.html">Generar Examen</a></li>                
+                <li><a href="../../modules/admin/principal_asesor.html">Menu Principal</a></li>                
                 <li class="divider"></li>
-                <li><a href="#">Asignar Examen</a></li>
+                <li><a href="../../modules/admin/menuCapacitaciones_Asesor.html">Capacitaciones</a></li>
                 <li class="divider"></li> 
-                <li><a href="#">Presentar Examen</a></li>
+                <li><a href="#">Seguimiento</a></li>
                 
               </ul>
             </li>    
@@ -89,13 +89,13 @@
                   
                     <div class="panel panel-default">
                         <div style="margin:7px">
-                          <div class="col-xs-4">
+                            <div class="col-xs-4">
                               <div class="btn-group">
-                                  <a class="btn btn-default"><span>Nuevo</span></a>
-                                  <!--a class="btn btn-default"><span>Editar</span></a-->
-                                  <!--a class="btn btn-default"><span>Eliminar</span></a-->
+                                  <label class="active" ><font size="4" color ="black">Registro de exámenes</font></label>                                   
                               </div>
-                          </div>
+                            </div>
+                            
+                            
                           <div class="col-xs-3 pull-right form-group">
                               <input type="text" class="form-control" style="border-radius:0px" placeholder="Buscar">
                           </div>
@@ -109,7 +109,8 @@
                                         <th>Inicio</th>
                                         <th>Vencimiento</th>
                                         <th>Estado</th>
-                                        <th style="width:250px">Acción</th>
+                                         <th>Calificación</th>
+                                        <th style="width:200px">Acción</th>
                                       </tr>
                                   </thead>
                                   <tbody>
@@ -119,18 +120,16 @@
                                         <td class="">01-11-2016</td>
                                         <td class="">26-11-2016</td>
                                         <td class="center">Activo</td>
+                                        <td class="center">100%</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
+                                            </button>                                             
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-play"></span>
                                             </button>
                                         </td>   
                                       </tr>
@@ -140,18 +139,16 @@
                                         <td class="">01-12-2016</td>
                                         <td class="">27-12-2016</td>
                                         <td class="center">Inactivo</td>
+                                        <td class="center">---</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
+                                            </button>                                            
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-play"></span>
                                             </button>
                                         </td>   
                                       </tr>
@@ -161,18 +158,16 @@
                                         <td class="">01-11-2016</td>
                                         <td class="">26-11-2016</td>
                                         <td class="center">Suspendido</td>
+                                        <td class="center">---</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
+                                            </button>                                             
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-play"></span>
                                             </button>
                                         </td>   
                                       </tr>
@@ -182,18 +177,16 @@
                                         <td class="">01-03-2016</td>
                                         <td class="">26-04-2016</td>
                                         <td class="center">Inactivo</td>
+                                        <td class="center">---</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
+                                            </button>                                             
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-play"></span>
                                             </button>
                                         </td>   
                                       </tr>
