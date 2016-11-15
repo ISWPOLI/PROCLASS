@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proclass</title>
 
-	  <!-- Material Design Icons -->
+	<!-- Material Design Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	  <!-- Font Awesome -->
+	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	  <!-- Bootstrap core CSS -->
+	<!-- Bootstrap core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
-	  <!-- Material Design Bootstrap -->
+	<!-- Material Design Bootstrap -->
     <link href="../../css/mdb.css" rel="stylesheet">
 
-	  <!-- Material Design Bootstrap -->
+	<!-- Material Design Bootstrap -->
     <link href="../../css/style.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!--Navigation-->
     <nav class="navbar blue navbar-fixed-top z-depth-1 animated slideInDown" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand waves-effect waves-light" href="../../index.html"><span id="textLogo">Proclass SAS</span></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-light" href="../../index.html"><span id="textLogo">Proclass SAS</span></a>
 
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active">
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group waves-effect waves-light">
-                      <!--input type="text" class="form-control" placeholder="Buscar"--> 
-                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/principal.html">Regresar</a>    
-                    </div>
-                </form>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" >Opciones <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="../../modules/admin/modelo0.html">Generar Examen</a></li>                
-                <li class="divider"></li>
-                <li><a href="#">Asignar Examen</a></li>
-                <li class="divider"></li> 
-                <li><a href="#">Presentar Examen</a></li>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group waves-effect waves-light">
+                                <!--input type="text" class="form-control" placeholder="Buscar"-->
+                                <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/principal_Asesor.html">Regresar</a>
+                            </div>
+                        </form>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button">Opciones <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="../../modules/admin/principal_Asesor.html">Menu Principal</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../../modules/admin/ListaCurso.html">Lista de capacitaciones</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Fichas técnicas Renault</a></li>
+                            <li><a href="#">Materiales de estudio</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Concesionarios</a></li>                            
+                            <li class="divider"></li>
+                            <li><a href="#">Gestión de capacitación</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 
-              </ul>
-            </li>    
-          </ul>
-<!--aca meto el codigo nuevo -->
-
-                    <!-- La tematica del examen depende del "Lanzamiento" (puede ser el variable) de los carros -->
-                    <!-- El tipo de examen debe ser opcion multiple  -->
-                    <!-- Se debe definir el numero de preguntas al principio con opcion de colocar mas 
-                            Dentro de Ver se puede ver los detalles y cambiar las caracteristicas del examen -->
-                    <!-- La calificacion se hace durante el modulo de evaluaciones o de segumiento -->
-                    <!-- Para asignar lo a asesores se debe hacerlo automaticamente a TODOS menos a los que van menos de 6 meses
-                            Se decidio hacer la asignacion a traves del modulo de capacitaciones cuando se inscribe a un "curso" -->
-                    <!-- Opcion para buscar examenes  (???)-->
-                    <!-- Incluir una "prevista" al final antes de finalizar cambios y guardar el examen -->
-<!-- Prueba2 -->
-
-
-            <br>    <br>    <br>   <br>    
+	            <!--aca meto el codigo nuevo -->
+               <br>    <br>    <br>   <br>    
             <!--CENTER--> 
-             <label class="active" ><font size="8" color ="white">Evaluaciones</font></label>                     
+             <label class="active" ><font size="8" color ="white">Capacitaciones</font></label>                     
             <!--/CENTER-->               
             <br>   
          
@@ -91,9 +86,7 @@
                         <div style="margin:7px">
                           <div class="col-xs-4">
                               <div class="btn-group">
-                                  <a class="btn btn-default"><span>Nuevo</span></a>
-                                  <!--a class="btn btn-default"><span>Editar</span></a-->
-                                  <!--a class="btn btn-default"><span>Eliminar</span></a-->
+                                  <label class="active" ><font size="4" color ="black">Registro de capacitaciones personales</font></label>                                   
                               </div>
                           </div>
                           <div class="col-xs-3 pull-right form-group">
@@ -114,86 +107,86 @@
                                   </thead>
                                   <tbody>
                                       <tr>
-                                        <td class="">PRG0001</td>
-                                        <td class="">Lanzamiento Nov.2016</td>
-                                        <td class="">01-11-2016</td>
-                                        <td class="">26-11-2016</td>
-                                        <td class="center">Activo</td>
+                                        <td class="">PRG00A1</td>
+                                        <td class="">Lanzamiento Ene.2016</td>
+                                        <td class="">01-01-2016</td>
+                                        <td class="">26-01-2016</td>
+                                        <td class="center">Realizado</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
+                                            </button>                                             
                                             <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
                                                 <span class="glyphicon glyphicon-trash"></span>
                                             </button>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </button>
+                                        </td>     
+                                      </tr>
+                                      <tr>
+                                        <td class="">PRG00A2</td>
+                                        <td class="">Lanzamiento May.2016</td>
+                                        <td class="">01-05-2016</td>
+                                        <td class="">27-05-2016</td>
+                                        <td class="center">Realizado</td>
+                                        <td>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-user"></span>
+                                            </button>                                             
+                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </button>
+                                        </td>     
+                                      </tr>
+                                      <tr>
+                                        <td class="">PRG0001</td>
+                                        <td class="">Lanzamiento Nov.2016</td>
+                                        <td class="">01-10-2016</td>
+                                        <td class="">26-10-2016</td>
+                                        <td class="center">Realizado</td>
+                                        <td>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-user"></span>
+                                            </button>                                             
+                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
+                                                <span class="glyphicon glyphicon-calendar"></span>
                                             </button>
                                         </td>   
                                       </tr>
                                       <tr>
                                         <td class="">PRG0002</td>
                                         <td class="">Lanzamiento Dic.2016</td>
-                                        <td class="">01-12-2016</td>
-                                        <td class="">27-12-2016</td>
-                                        <td class="center">Inactivo</td>
+                                        <td class="">10-10-2016</td>
+                                        <td class="">10-11-2016</td>
+                                        <td class="center bold-700">Pendiente</td>
                                         <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
+                                            </button>                                             
                                             <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
                                                 <span class="glyphicon glyphicon-trash"></span>
                                             </button>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
                                                 <span class="glyphicon glyphicon-search"></span>
                                             </button>
-                                        </td>   
-                                      </tr>
-                                      <tr>
-                                        <td class="">PRG0003</td>
-                                        <td class="">Lanzamiento Ene.2017</td>
-                                        <td class="">01-11-2016</td>
-                                        <td class="">26-11-2016</td>
-                                        <td class="center">Suspendido</td>
-                                        <td>
                                             <button type="button" class="enabledisable-news btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
-                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-search"></span>
-                                            </button>
-                                        </td>   
-                                      </tr>
-                                      <tr>
-                                        <td class="">PRG0004</td>
-                                        <td class="">Lanzamiento Mar.2016</td>
-                                        <td class="">01-03-2016</td>
-                                        <td class="">26-04-2016</td>
-                                        <td class="center">Inactivo</td>
-                                        <td>
-                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-user"></span>
-                                            </button>
-                                            <button type="button" class="btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-pencil"></span>
-                                            </button>
-                                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-                                                <span class="glyphicon glyphicon-trash"></span>
-                                            </button>
-                                            <button type="button" class="enabledisable-news btn btn-xs btn-default">
-                                                <span class="glyphicon glyphicon-search"></span>
+                                                <span class="glyphicon glyphicon-calendar"></span>
                                             </button>
                                         </td>   
                                       </tr>
@@ -229,52 +222,52 @@
                         </div>
                     </div>  
                 </div>     
-            </form>  
-           
+            </form>
+            
+            </div>
         </div>
-      </div>
     </nav>
     <!--/.Navigation-->
 
     <!-- Intro image -->
     <section class="full-bg-img">
-      <div class="container">
-        <div class="space-30"></div>
-        <div class="space-30"></div>
-        <div class="verticalcenter text-center">
-          <div class="animated lightSpeedIn white-text">
-          </div>
+        <div class="container">
+            <div class="space-30"></div>
+            <div class="space-30"></div>
+            <div class="verticalcenter text-center">
+                <div class="animated lightSpeedIn white-text">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!--/. Intro image -->
 
 
     <!-- Footer -->
     <footer class="page-footer" id="footer">
-      <!--Footer Content-->
-      <div class="container">
-        <div class="row center-on-small-only">
+        <!--Footer Content-->
+        <div class="container">
+            <div class="row center-on-small-only">
 
-          <!--Fifth column-->
-          <div class="col-md-2 text-center">
+                <!--Fifth column-->
+                <div class="col-md-2 text-center">
 
-            <a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg">Vive el Poli</a>
-          </div>
-          <!--/.Fifth column-->
+                    <a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg">Vive el Poli</a>
+                </div>
+                <!--/.Fifth column-->
+            </div>
         </div>
-      </div>
-      <!--/.Footer Content-->
+        <!--/.Footer Content-->
 
-      <!--Coprytights-->
-      <div class="footer-copyright text-center rgba-black-light">
-        <div class="container-fluid">
-          © 2016 Copyright: <a href="http://www.poli.edu.co/"> PoliTécnico GranColombiano </a><a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg"><i class="fa fa-facebook"> </i></a>
-          <a target="_blank" href="https://twitter.com/poligran" class="btn-sm tw-bg"><i class="fa fa-twitter"> </i></a>
-          <a target="_blank" href="https://plus.google.com/+poligran/posts" class="btn-sm gplus-bg"><i class="fa fa-google-plus"> </i></a>
+        <!--Coprytights-->
+        <div class="footer-copyright text-center rgba-black-light">
+            <div class="container-fluid">
+                © 2016 Copyright: <a href="http://www.poli.edu.co/"> PoliTécnico GranColombiano </a><a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg"><i class="fa fa-facebook"> </i></a>
+                <a target="_blank" href="https://twitter.com/poligran" class="btn-sm tw-bg"><i class="fa fa-twitter"> </i></a>
+                <a target="_blank" href="https://plus.google.com/+poligran/posts" class="btn-sm gplus-bg"><i class="fa fa-google-plus"> </i></a>
+            </div>
         </div>
-      </div>
-      <!--/.Coprytights-->
+        <!--/.Coprytights-->
     </footer>
     <!-- Footer -->
 
@@ -291,6 +284,6 @@
     <script type="text/javascript" src="../../js/libs/mdb/mdb.js"></script>
 
 
-  </body>
+</body>
 
 </html>
