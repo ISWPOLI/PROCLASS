@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proclass</title>
+
+	  <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	  <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+	  <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.css" rel="stylesheet">
+
+	  <!-- Material Design Bootstrap -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!--Navigation-->
+    <nav class="navbar blue navbar-fixed-top z-depth-1 animated slideInDown" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand waves-effect waves-light" href="../../index.html"><span id="textLogo">Proclass SAS</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group waves-effect waves-light">
+                      <!--input type="text" class="form-control" placeholder="Buscar"--> 
+                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/principal.html">Regresar</a>    
+                    </div>
+                </form>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" >Opciones <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Opcion1</a></li>                
+                    <li class="divider"></li>
+                    <li><a href="#">Opcion2</a></li>
+                    <li class="divider"></li> 
+                    <li><a href="#">Opcion3</a></li>                
+                 </ul>
+            </li>    
+          </ul>
+            
+<!--aca meto el codigo nuevo  INICIO -->
+
+<!--DIEGO, DANIEL en esta seccion tienen que poner su código -->
+
+          <br>    <br>    <br>   <br>    <br>    
+          <!--CENTER--> 
+            <label class="active" ><font size="6" color ="white">Evaluaciones</font></label>                     
+          <!--/CENTER--> 
+          
+ <form class="form-vertical white black-text">
+<fieldset>
+
+<!-- Form Name -->
+<legend class ="blue-text bold-700">Datos generales del examen</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-2 control-label black-text" for="textinput">Nombre del examen</label>  
+  <div class="col-md-3">
+  <input id="textinput" name="textinput" placeholder="Ingrese titulo del examen" class="form-control input-md blue-text bold-700" required="" type="text">   
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-1 control-label black-text" for="Código">Código</label>  
+  <div class="col-md-3">
+  <input id="Código" name="Código" placeholder="Ingrese código" class="form-control input-md blue-text bold-700" required="" type="text">
+  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-1 control-label black-text" for="tiempo">Duración del examen</label>  
+  <div class="col-md-2">
+  <input id="tiempo" name="tiempo" placeholder="hh:mm" class="form-control input-md blue-text bold-700" required="" type="text">  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-2 control-label black-text" for="formador">Nombre del formador</label>  
+  <div class="col-md-3">
+  <input id="formador" name="formador" placeholder="Nombre y Apellido del formador" class="form-control input-md blue-text bold-700" required="" type="text">
+   
+  </div>
+</div>
+</fieldset>
+</form>
+
+
+<form class="form-horizantal blue">
+<fieldset>
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-2 control-label black-text" for="estado">Estado del examen</label>
+  <div class="col-md-3">
+  <div class="checkbox">
+    <label for="estado-0"  class="black-text" >
+      <input name="estado" id="estado-0" value="1" type="checkbox">
+      Activo
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="estado-1" class="black-text" >
+      <input name="estado" id="estado-1" value="2" type="checkbox">
+      Inactivo
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-1 control-label black-text" for="caracter">Carácter</label>
+  <div class="col-md-1">
+  <div class="checkbox">
+    <label for="caracter-0"  class="black-text">
+      <input name="caracter" id="caracter-0" value="1" type="checkbox">
+      Obligatorio
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="caracter-1"  class="black-text">
+      <input name="caracter" id="caracter-1" value="2" type="checkbox">
+      Opcional
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-5 control-label black-text" for="detalle"> </label>
+  <div class="col-md-5">
+    <a id="detalle" name="detalle" class="btn btn-primary" href="../../modules/admin/Evaluacion.html">Detalle del examen</a>    
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="guardar">    </label>
+  <div class="col-md-4">
+    <button id="guardar" name="guardar" class="btn btn-success">Guardar</button>
+    <button id="cancelar" name="cancelar" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+          
+          
+          
+          
+          
+  <!--aca meto el codigo nuevo FIN -->      
+          
+        </div>
+      </div>
+    </nav>
+    <!--/.Navigation-->
+
+    <!-- Intro image -->
+    <section class="full-bg-img">
+      <div class="container">
+        <div class="space-30"></div>
+        <div class="space-30"></div>
+        <div class="verticalcenter text-center">
+          <div class="animated lightSpeedIn white-text">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/. Intro image -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer" id="footer">
+      <!--Footer Content-->
+      <div class="container">
+        <div class="row center-on-small-only">
+
+          <!--Fifth column-->
+          <div class="col-md-2 text-center">
+            <a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg">Vive el Poli</a>
+          </div>
+          <!--/.Fifth column-->
+        </div>
+      </div>
+    <!--/.Footer Content-->
+
+      <!--Coprytights-->
+      <div class="footer-copyright text-center rgba-black-light">
+        <div class="container-fluid">
+          © 2016 Copyright: <a href="http://www.poli.edu.co/"> PoliTécnico GranColombiano </a><a target="_blank" href="https://es-la.facebook.com/poligran" class="btn-sm fb-bg"><i class="fa fa-facebook"> </i></a>
+          <a target="_blank" href="https://twitter.com/poligran" class="btn-sm tw-bg"><i class="fa fa-twitter"> </i></a>
+          <a target="_blank" href="https://plus.google.com/+poligran/posts" class="btn-sm gplus-bg"><i class="fa fa-google-plus"> </i></a>
+        </div>
+      </div>
+      
+      <!--/.Coprytights-->
+      
+    </footer>
+    <!-- Footer -->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/libs/jquery/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="../../js/libs/mdb/mdb.js"></script>
+
+  </body>
+
+</html>
