@@ -70,7 +70,32 @@
           <!--CENTER--> 
             <label class="active" ><font size="8" color ="white">Reportes</font></label>                     
           <!--/CENTER--> 
-          <canvas id="myChart" width="400" height="200"></canvas>
+            <div class="panel panel-success">
+                
+                <div class="panel-body">
+                    <div>
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <div>
+    			<canvas id="mySecondChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+          
+          <div class="panel panel-success">
+               <div class="panel-body">
+                     <div>
+                        <canvas id="myThirdChart" width="150" height="150"></canvas>
+                     </div>
+                </div>
+          </div>
+          
+         <!-- Script para el Reporte de Asesores aprobado por Region-->
 	<script>
 	
 		var canvas = document.getElementById('myChart');
@@ -137,6 +162,121 @@
 			data:data,
 		  options:option
 		});
+
+	</script>
+        
+        <!-- Script para el Reporte de Rango de Calificacion de todos los asesores-->
+        <script>
+		var canvastwo = document.getElementById('mySecondChart');
+		var data = {
+		    labels: ["0%-40%", "41%-50%", "51%-60%", "61%-70%", "71%-80%", "81%-90%", "91%-100%"],
+		    
+		    datasets: [
+		        {
+		            label: "Resultados",
+		            backgroundColor: [
+		                'rgba(255, 99, 132, 0.2)',
+		                'rgba(54, 162, 235, 0.2)',
+		                'rgba(255, 206, 86, 0.2)',
+		                'rgba(75, 192, 192, 0.2)',
+		                'rgba(153, 102, 255, 0.2)',
+		                'rgba(255, 159, 64, 0.2)'
+		            ],
+		            borderColor: [
+		                'rgba(255,99,132,1)',
+		                'rgba(54, 162, 235, 1)',
+		                'rgba(255, 206, 86, 1)',
+		                'rgba(75, 192, 192, 1)',
+		                'rgba(153, 102, 255, 1)',
+		                'rgba(255, 159, 64, 1)'
+		            ],
+		            borderWidth: 2,
+		            hoverBackgroundColor: [
+		                'rgba(255, 99, 132, 0.2)',
+		                'rgba(54, 162, 235, 0.2)',
+		                'rgba(255, 206, 86, 0.2)',
+		                'rgba(75, 192, 192, 0.2)',
+		                'rgba(153, 102, 255, 0.2)',
+		                'rgba(255, 159, 64, 0.2)'
+		            ],
+		            hoverBorderColor: [
+		                'rgba(255,99,132,1)',
+		                'rgba(54, 162, 235, 1)',
+		                'rgba(255, 206, 86, 1)',
+		                'rgba(75, 192, 192, 1)',
+		                'rgba(153, 102, 255, 1)',
+		                'rgba(255, 159, 64, 1)'
+		            ],
+		            
+		            data: [65, 59, 10, 56, 56, 55, 40],
+		        }
+		    ]
+		};
+
+		Chart.defaults.global.legend.display = false;
+
+		var option = {
+		 title: {
+		            display: true,
+		            text: 'Rango de Calificaciones de todo el Pais'
+		        },
+		animation: {
+						duration:5000
+		}
+
+		};
+
+
+		var mySecondBarChart = Chart.Bar(canvastwo,{
+			data:data,
+		  options:option
+		});
+
+	</script>
+        
+        <!-- Script para el Reporte de numero de asesores aprobados por Lanzamiento-->
+        <script>
+		var canvasthree = document.getElementById('myThirdChart');
+
+		var data = {
+				    labels: [
+				        "Lanzamiento1",
+				        "Lanzamiento2",
+				        "Lanzamiento3"
+				    ],
+				    datasets: [
+				        {
+				            data: [300, 50, 100],
+				            backgroundColor: [
+				                "#FF6384",
+				                "#36A2EB",
+				                "#FFCE56"
+				            ],
+				            hoverBackgroundColor: [
+				                "#FF6384",
+				                "#36A2EB",
+				                "#FFCE56"
+				            ]
+				        }]
+				};
+
+
+		var option = {
+		 title: {
+		            display: true,
+		            text: 'Cantidad de Asesores Aprobados por Lanzamiento'
+		        },
+		animation: {
+						animateScale:true
+		}
+
+		};
+
+		var myPieChart = new Chart(canvasthree,{
+                        type: 'pie',
+                    data: data,
+                    options: option
+                });
 
 	</script>
           
