@@ -60,21 +60,32 @@
                     <li><a href="#">Opcion3</a></li>                
                  </ul>
             </li>    
-          </ul>
+          </ul>    
+          
+        </div>
+      </div>
+    </nav>
+    <!--/.Navigation-->
+
+    <!-- Intro image -->
+    <section class="full-bg-img">
+      <div class="container">
+        <div class="space-30"></div>
+        <div class="space-30"></div>
+        <div class="verticalcenter text-center">
             
-<!--aca meto el codigo nuevo  INICIO -->
+          <!--aca meto el codigo nuevo  INICIO -->
 
 <!--DIEGO, DANIEL en esta seccion tienen que poner su código -->
 
-          <br>    <br>    <br>   <br>    <br>    <br>  <br> 
+          
           <!--CENTER--> 
             <label class="active" ><font size="8" color ="white">Reportes</font></label>                     
           <!--/CENTER--> 
-            <div class="panel panel-success">
-                
+            <div class="panel panel-success">    
                 <div class="panel-body">
                     <div>
-                        <canvas id="myChart" width="400" height="200"></canvas>
+                        <canvas id="myChart" width="400" height="225"></canvas>
                     </div>
                 </div>
             </div>
@@ -82,15 +93,15 @@
             <div class="panel panel-success">
                 <div class="panel-body">
                     <div>
-    			<canvas id="mySecondChart" width="400" height="200"></canvas>
+    			<canvas id="mySecondChart" width="400" height="225"></canvas>
                     </div>
                 </div>
             </div>
           
-          <div class="panel panel-success">
+            <div class="panel panel-success">
                <div class="panel-body">
                      <div>
-                        <canvas id="myThirdChart" width="150" height="150"></canvas>
+                        <canvas id="myThirdChart" width="400" height="225"></canvas>
                      </div>
                 </div>
           </div>
@@ -145,11 +156,12 @@
 		};
 
 		Chart.defaults.global.legend.display = false;
+                Chart.defaults.global.maintainAspectRatio = false;
 
 		var option = {
 		 title: {
 		            display: true,
-		            text: 'Numero de Aesores Que Pasaron Por Pais'
+		            text: 'Numero de Asesores Que Pasaron Por Region'
 		        },
 		animation: {
 						duration:5000
@@ -157,10 +169,9 @@
 
 		};
 
-
 		var myBarChart = Chart.Bar(canvas,{
-			data:data,
-		  options:option
+                    data:data,
+                    options:option
 		});
 
 	</script>
@@ -240,26 +251,30 @@
 
 		var data = {
 				    labels: [
-				        "Lanzamiento1",
-				        "Lanzamiento2",
-				        "Lanzamiento3"
+				        "Lanzamiento Nov 2016",
+				        "Lanzamiento Dec 2016",
+				        "Lanzamiento Ene 2017",
+                                        "Lanzamiento Mar 2017"
 				    ],
 				    datasets: [
 				        {
-				            data: [300, 50, 100],
+				            data: [50, 50, 50, 50],
 				            backgroundColor: [
 				                "#FF6384",
 				                "#36A2EB",
-				                "#FFCE56"
+				                "#FFCE56",
+                                                "#00FF00"
 				            ],
 				            hoverBackgroundColor: [
 				                "#FF6384",
 				                "#36A2EB",
-				                "#FFCE56"
+				                "#FFCE56",
+                                                "#00FF00"
 				            ]
 				        }]
 				};
-
+                                
+                Chart.defaults.global.maintainAspectRatio = false;
 
 		var option = {
 		 title: {
@@ -269,7 +284,6 @@
 		animation: {
 						animateScale:true
 		}
-
 		};
 
 		var myPieChart = new Chart(canvasthree,{
@@ -279,21 +293,9 @@
                 });
 
 	</script>
-          
-          
-  <!--aca meto el codigo nuevo FIN -->      
-          
-        </div>
-      </div>
-    </nav>
-    <!--/.Navigation-->
-
-    <!-- Intro image -->
-    <section class="full-bg-img">
-      <div class="container">
-        <div class="space-30"></div>
-        <div class="space-30"></div>
-        <div class="verticalcenter text-center">
+                   
+  <!--aca meto el codigo nuevo FIN -->    
+            
           <div class="animated lightSpeedIn white-text">
           </div>
         </div>
