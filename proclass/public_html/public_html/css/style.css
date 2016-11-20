@@ -205,3 +205,69 @@ footer.page-footer {
     background-color: rgb(74, 189, 232) !important;
     color: white;
 }
+
+/************Para el reloj del examen*****************************************************************/
+
+
+.container {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#main { 
+  background: #3B3B3B;
+  height: 0px auto;
+}
+
+.content {
+  padding: 10px 44px;
+}
+
+.text {
+  border-bottom: 1px solid #262626;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text h2 {
+  color: #E5E5E5;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.counter {
+  background: #2C2C2C;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
+  min-height: 250px;
+  text-align: left;
+}
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
