@@ -80,7 +80,7 @@
 
           
           <!--CENTER--> 
-            <label class="active" ><font size="8" color ="white">Reportes</font></label>                     
+            <label class="active" ><font size="8" color ="white">Reportes de Calificaciones</font></label>                     
           <!--/CENTER--> 
             <div class="panel panel-success">    
                 <div class="panel-body">
@@ -106,12 +106,12 @@
                 </div>
           </div>
           
-         <!-- Script para el Reporte de Asesores aprobado por Region-->
+         <!-- Script para el Reporte de Asesores aprobado por Ciudad-->
 	<script>
 	
 		var canvas = document.getElementById('myChart');
 		var data = {
-		    labels: ["Pais1", "Pais2", "Pais3", "Pais4", "Pais5", "Pais6", "Pais7"],
+		    labels: ["Bogotá", "Medellín", "Cali", "Baranquilla", "Pereira"],
 		    
 		    datasets: [
 		        {
@@ -150,7 +150,7 @@
 		                'rgba(255, 159, 64, 1)'
 		            ],
 		            
-		            data: [65, 59, 10, 81, 56, 55, 40],
+		            data: [864, 576, 252, 320, 376, 55, 40],
 		        }
 		    ]
 		};
@@ -161,7 +161,7 @@
 		var option = {
 		 title: {
 		            display: true,
-		            text: 'Numero de Asesores Que Pasaron Por Region'
+		            text: 'Cantidad de Asesores Aprobado por Ciudad'
 		        },
 		animation: {
 						duration:5000
@@ -219,7 +219,7 @@
 		                'rgba(255, 159, 64, 1)'
 		            ],
 		            
-		            data: [65, 59, 10, 56, 56, 55, 40],
+		            data: [4, 20, 80, 180, 560, 1104, 600],
 		        }
 		    ]
 		};
@@ -229,7 +229,7 @@
 		var option = {
 		 title: {
 		            display: true,
-		            text: 'Rango de Calificaciones de todo el Pais'
+		            text: 'Rango de Calificaciones Obtenidas en Colombia'
 		        },
 		animation: {
 						duration:5000
@@ -258,7 +258,7 @@
 				    ],
 				    datasets: [
 				        {
-				            data: [50, 50, 50, 50],
+				            data: [452, 566, 679, 567],
 				            backgroundColor: [
 				                "#FF6384",
 				                "#36A2EB",
