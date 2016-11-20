@@ -44,7 +44,7 @@
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group waves-effect waves-light">
                       <!--input type="text" class="form-control" placeholder="Buscar"--> 
-                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/detalleEvaluacion2.html">Regresar</a>    
+                        <a class="btn btn-primary waves-effect waves-light" href="../../modules/admin/detalleEvaluacion2_Modelo.html">Regresar</a>    
                     </div>
                 </form>
             </li>
@@ -91,9 +91,9 @@
                     
                     <!-- Textarea -->
                     <div class="form-group black-text bold-700">
-                      <label class="col-md-1 control-label black-text bold-700" for="textarea">Pregunta</label>
+                      <label class="col-md-1 control-label black-text bold-700" for="textarea">Pregunta 1</label>
                         <div class="col-md-11">                     
-                            <textarea class="form-control" id="textarea" name="textarea">Ingrese la pregunta</textarea> 
+                            <textarea class="form-control" id="textarea" name="textarea">¿Cuál es la ventaja competitiva del RENAULT CLIO CAMPUS en cuanto a sus dimensiones frente a la competencia?</textarea> 
                             <br>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                         <div class="col-md-11"> 
                              <div class="form-group">                                  
                                 <div>
-                                  <input id="opcion1" name="opcion1" placeholder="Ingrese la respuesta y marque si es correcta" class="form-control input-md black-text bold-700" required="" type="text">                                  
+                                  <input id="opcion1" name="opcion1" placeholder="Un excelente baúl de 255 litros de gran capacidad, el mejor de su categoría." class="form-control input-md black-text bold-700" type="text">                                  
                                   <span class="help-block"> </span>  
                                 </div>
                               </div>   
@@ -134,7 +134,7 @@
                         <div class="col-md-11"> 
                              <div class="form-group">                                  
                                 <div>
-                                  <input id="opcion1" name="opcion1" placeholder="Ingrese la respuesta y marque si es correcta" class="form-control input-md black-text bold-700" required="" type="text">                                  
+                                  <input id="opcion1" name="opcion1" placeholder="Una mayor altura total, mayor en su categoría, ofreciendo un gran habitáculo." class="form-control input-md black-text bold-700"  type="text">                                  
                                   <span class="help-block"> </span>  
                                 </div>
                               </div>   
@@ -150,7 +150,23 @@
                         <div class="col-md-11"> 
                              <div class="form-group">                                  
                                 <div>
-                                  <input id="opcion1" name="opcion1" placeholder="Ingrese la respuesta y marque si es correcta" class="form-control input-md black-text bold-700" required="" type="text">                                  
+                                  <input id="opcion1" name="opcion1" placeholder="Un motor 2.0 litros que ofrece grandes prestaciones en todo tipo de terreno." class="form-control input-md black-text bold-700"  type="text">                                  
+                                  <span class="help-block"> </span>  
+                                </div>
+                              </div>   
+                        </div>                        
+                     </div>  
+                    
+                    <div class="row">
+                        <div> 
+                                <div class="form-group">
+                                  <label class="col-md-1 control-label black-text bold-700" for="opcion1">Opción 4</label>                                   
+                                </div>   
+                        </div>
+                        <div class="col-md-11"> 
+                             <div class="form-group">                                  
+                                <div>
+                                  <input id="opcion1" name="opcion1" placeholder="Un mejor desempeño por sus llantas de 16 pulgadas." class="form-control input-md black-text bold-700"  type="text">                                  
                                   <span class="help-block"> </span>  
                                 </div>
                               </div>   
@@ -162,17 +178,16 @@
                            <!-- Button -->
                            <div class="form-group">
                              <label class=" control-label black-text bold-700" for="otro">Ingresar mas opciones</label>
-                             <button id="otro" name="otro" class="btn btn-primary">Más</button>
+                             <button id="otro" name="otro" class="btn btn-primary">Más</button>                             
                              
-                             <button id="siguiente" name="siguiente" class="btn btn-primary">Siguiente pregunta</button>
-                            
-                             <a class="btn btn-danger" href="../../modules/admin/detalleEvaluacion2.html">Cancelar</a>                              
+                             <a class="btn btn-primary" href="../../modules/admin/Evaluacion2_Modelo_1.html">Siguiente pregunta</a> 
+                             <a class="btn btn-danger" href="../../modules/admin/detalleEvaluacion2_Modelo.html">Cancelar</a>                              
                              
-                             <a id="fin" name="finalizar" class="btn btn-success" href="../../modules/admin/detalleEvaluacion2.html">Finalizar</a> 
+                             <a id="fin" name="finalizar" class="btn btn-success" href="../../modules/admin/detalleEvaluacion2_Modelo.html">Finalizar</a> 
                              <div class="col-md-1"></div>
                            </div>   
                         </div> 
-                    </div>   
+                    </div>    
              </div>
                
                
@@ -183,7 +198,7 @@
                           <div class="col-md-4">
                             <div class="checkbox">
                                 <label for="correcta-0">
-                                  <input name="correcta" id="correcta-0" value="1" type="checkbox"></label> 
+                                  <input name="correcta" id="correcta-0" value="1" type="checkbox" checked="checked"></label> 
                             </div>
                             <br><br>  
                             <div class="checkbox">
@@ -194,7 +209,12 @@
                             <div class="checkbox">
                                 <label for="correcta-2">
                                   <input name="correcta" id="correcta-2" value="3" type="checkbox"></label>
-                            </div>                               
+                            </div>     
+                            <br><br>  
+                            <div class="checkbox">
+                                <label for="correcta-2">
+                                  <input name="correcta" id="correcta-2" value="3" type="checkbox"></label>
+                            </div> 
                           </div>
                         </div> 
               </div>
